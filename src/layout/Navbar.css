@@ -1,0 +1,20 @@
+.bar {
+    display: flex;
+    list-style: none;
+    font-size: 1rem;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+
+}
+
+li:hover {
+    border-bottom: 2px solid black;
+}
+
+.buscador:hover {
+    border: 2px solid black;
+    border-radius: 25px;
+}

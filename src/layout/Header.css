@@ -1,0 +1,13 @@
+.box-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: gray;
+}
+
+.widget-header {
+
+    display: flex;
+}

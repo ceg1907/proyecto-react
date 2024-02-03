@@ -2,7 +2,7 @@ import { CiShoppingBasket } from "react-icons/ci";
 import React from 'react'
 import './CartWidget.css'
 
-export default function CartWidget() {
+export function CartWidget() {
   return (
       <div className= 'cart-box'>
           <button>

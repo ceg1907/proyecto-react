@@ -1,6 +1,6 @@
 
-import CartWidget from "../components/CartWidget"
-import UserWitget from "../components/UserWitget"
+import {CartWidget} from "../components/CartWidget"
+import {UserWitget} from "../components/UserWitget"
 import {Navbar} from "./Navbar"
 import "./Header.css"
 

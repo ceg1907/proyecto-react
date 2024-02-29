@@ -2,7 +2,7 @@
     padding: 10px;
 }
 
-button {
+.button-CartWidget {
     background-color: transparent;
     border: none;
     text-decoration: none;

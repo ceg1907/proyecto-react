@@ -7,14 +7,23 @@
 li {
     padding: 5px;
     margin: 5px;
+    text-transform: capitalize;
 
 }
 
 li:hover {
     border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.buscador {
+    width: 1.5rem;
+
+
+
 }
 
 .buscador:hover {
-    border: 2px solid black;
-    border-radius: 25px;
+    border: 1px solid black;
+    border-radius: 17px;
 }

@@ -1,0 +1,35 @@
+.box-itemDetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100dvw;
+    height: 550px;
+    padding: 10px;
+    border: 1px solid bisque;
+
+
+}
+
+.containerDetail {
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.box-imgDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.imgDetail {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    padding: 5px;
+
+}

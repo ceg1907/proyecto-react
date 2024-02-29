@@ -1,0 +1,10 @@
+.user-box {
+    padding: 10px;
+}
+
+.user-button {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    display: flex;
+}

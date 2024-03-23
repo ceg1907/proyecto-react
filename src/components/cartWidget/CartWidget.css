@@ -1,12 +1,13 @@
 .cart-box {
+    display: flex;
+    align-items: center;
     padding: 10px;
+    text-decoration: none;
 }
 
-.button-CartWidget {
-    background-color: transparent;
-    border: none;
-    text-decoration: none;
-    display: flex;
+
+.cart-box:hover {
+    cursor: pointer;
 }
 
 span {

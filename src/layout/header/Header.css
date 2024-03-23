@@ -11,3 +11,15 @@
 
     display: flex;
 }
+
+.widget-header a {
+    color: black;
+}
+
+.logo {
+    font-family: Valintina, sans-serif;
+    text-transform: capitalize;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}

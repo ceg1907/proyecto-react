@@ -1,12 +1,13 @@
-import { ProductCard } from "../../components/productCard/ProductCard";
-import "./ItemList.css";
+import { ProductCard } from '../../components/productCard/ProductCard';
+import { ProductCardConteiner } from '../../components/productCard/ProductCardContainer';
+import './ItemList.css';
 
 export const ItemList = ({ stock }) => {
   return (
-    <div className="box-articles">
+    <div className='box-articles'>
       {stock.map(({ id, title, price, img, description }) => {
         return (
-          <ProductCard
+          <ProductCardConteiner
             key={id}
             img={img}
             title={title}

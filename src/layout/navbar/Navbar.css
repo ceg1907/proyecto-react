@@ -1,17 +1,24 @@
-.bar {
+.bar,
+#basic-button {
     display: flex;
     list-style: none;
     font-size: 1rem;
+    align-items: center;
+
 }
 
-li {
+.bar li {
     padding: 5px;
     margin: 5px;
     text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+
+
 
 }
 
-li:hover {
+.bar li:hover {
     border-bottom: 2px solid black;
     cursor: pointer;
 }

@@ -1,14 +1,18 @@
-import { TbShoppingBag } from "react-icons/tb";
-import "./CartWidget.css";
+import { TbShoppingBag } from 'react-icons/tb';
+import './CartWidget.css';
+import { useContext } from 'react';
+import { CartContext } from '../../context/CartContext';
 
-export function CartWidget() {
+export const CartWidget = () => {
+  const { cartTotalArticles } = useContext(CartContext);
+
+  const totalQuantity = cartTotalArticles();
+
   return (
-    <div className="cart-box">
-      <button className="button-CartWidget">
-        <span>15</span>
-        <TbShoppingBag size={"1.5rem"} />
-        <span>carrito</span>
-      </button>
+    <div className='cart-box'>
+      <h4> {totalQuantity} </h4>
+      <TbShoppingBag size={'1.5rem'} />
+      <span>carrito</span>
     </div>
   );
-}
+};

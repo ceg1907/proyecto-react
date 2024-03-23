@@ -1,8 +1,10 @@
-import { useParams } from "react-router-dom";
-import { getArticles } from "../../productsMock";
-import { ItemList } from "./ItemList";
-import { useEffect, useState } from "react";
-import { Loader } from "../../components/loader/Loader";
+import { useParams } from 'react-router-dom';
+
+import { ItemList } from './ItemList';
+import { useEffect, useState } from 'react';
+import { Loader } from '../../components/loader/Loader';
+import { dataBase } from '../../fireBaseConfig';
+import { collection, getDocs, query, where } from 'firebase/firestore';
 
 export const ItemListContainer = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -10,17 +12,28 @@ export const ItemListContainer = () => {
   const [stock, setStock] = useState([]);
 
   useEffect(() => {
-    setIsLoading(true);
-    getArticles().then((res) => {
-      if (category) {
-        const articlesFilter = res.filter((item) => item.category === category);
-        setStock(articlesFilter);
-      } else {
-        setStock(res);
-      }
+    let articleCollection = collection(dataBase, 'articles');
 
-      setIsLoading(false);
-    });
+    let ask;
+
+    if (category) {
+      let articlesFiltered = query(
+        articleCollection,
+        where('category', '==', category)
+      );
+      ask = articlesFiltered;
+    } else {
+      ask = articleCollection;
+    }
+
+    getDocs(ask)
+      .then((res) => {
+        let arrayDecrypted = res.docs.map((element) => {
+          return { ...element.data(), id: element.id };
+        });
+        setStock(arrayDecrypted);
+      })
+      .finally(() => setIsLoading(false));
   }, [category]);
 
   return <>{isLoading ? <Loader /> : <ItemList stock={stock} />}</>;

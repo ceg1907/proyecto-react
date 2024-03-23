@@ -1,8 +1,26 @@
-import { useCounter } from "../../hooks/useCounter";
-import { ItemCount } from "./ItemCount";
+import { useState } from 'react';
+import { ItemCount } from './ItemCount';
 
-export const ItemCountContainer = () => {
-  const { counter, sumar, restar } = useCounter(1);
+export const ItemCountContainer = ({ stock, onAdd, initial = 1 }) => {
+  const [counter, setCounter] = useState(initial);
 
-  return <ItemCount counter={counter} sumar={sumar} restar={restar} />;
+  const sumar = () => {
+    if (counter < stock) {
+      setCounter(counter + 1);
+    } else {
+      alert();
+    }
+  };
+
+  const restar = () => {
+    if (counter > 1) {
+      setCounter(counter - 1);
+    } else {
+      alert();
+    }
+  };
+
+  return (
+    <ItemCount counter={counter} sumar={sumar} restar={restar} onAdd={onAdd} />
+  );
 };

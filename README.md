@@ -1,3 +1,11 @@
-E-commerce de arte en oleo tanto en lienzo como en vidrio
+# Art Ecommerce
 
-tiene funcional apartado del navBar home y categorias. ademas tiene funcional el carrito y el checkout.
+### Tienda de arte en lienzo y vidrio pintado con oleo
+
+## Tecnologia Vite + React
+
+![](../proyecto-react-GonzalezC/public/vite.svg)
+
+#### Instalacion de vite con NPM
+
+<pre> $ npm create vite@latest

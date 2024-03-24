@@ -2,12 +2,12 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDklcAlb5PuFP6Wg3m8NaJAI6GbEA3ulY0',
-  authDomain: 'artstore-ecommerce.firebaseapp.com',
-  projectId: 'artstore-ecommerce',
-  storageBucket: 'artstore-ecommerce.appspot.com',
-  messagingSenderId: '585941030587',
-  appId: '1:585941030587:web:3cf9a821f8c1876d753b9e',
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING,
+  appId: import.meta.env.VITE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);

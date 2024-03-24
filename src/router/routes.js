@@ -1,7 +1,7 @@
-import { CartContainer } from '../components/pages/cart/CartContainer';
-import { CheckoutContainer } from '../components/pages/checkout/CheckoutContainer';
-import { ItemDetailContainer } from '../components/pages/itemDetailContainer/ItemDetailContainer';
-import ItemListContainer from '../components/pages/itemListContainer/ItemListContainer';
+import { CartContainer } from '../pages/cart/CartContainer';
+import { CheckoutContainer } from '../pages/checkout/CheckoutContainer';
+import { ItemDetailContainer } from '../pages/itemDetailContainer/ItemDetailContainer';
+import { ItemListContainer } from '../pages/itemListContainer/ItemListContainer';
 
 export const routes = [
   {
@@ -16,7 +16,7 @@ export const routes = [
   },
   {
     id: 'detail',
-    path: '/item/:id',
+    path: '/article/:id',
     Element: ItemDetailContainer,
   },
   {

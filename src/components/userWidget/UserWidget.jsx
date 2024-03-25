@@ -1,13 +1,13 @@
 import { CiUser } from 'react-icons/ci';
-import './UserWidget.css';
+import '../../layout/header/Header.css';
 
 export function UserWidget() {
   return (
     <div className='user-box'>
-      <button className='user-button'>
+      <section>
         <CiUser size={'1.5rem'} />
-        <span>registrarse</span>
-      </button>
+      </section>
+      <p>registrarse</p>
     </div>
   );
 }

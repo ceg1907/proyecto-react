@@ -1,7 +1,7 @@
-import { TbShoppingBag } from 'react-icons/tb';
-import './CartWidget.css';
+import { CiShop } from 'react-icons/ci';
 import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
+import { Badge, Box } from '@mui/material';
 
 export const CartWidget = () => {
   const { cartTotalArticles } = useContext(CartContext);
@@ -10,9 +10,12 @@ export const CartWidget = () => {
 
   return (
     <div className='cart-box'>
-      <h4> {totalQuantity} </h4>
-      <TbShoppingBag size={'1.5rem'} />
-      <span>carrito</span>
+      <section>
+        <Badge badgeContent={totalQuantity} className='badge'>
+          <CiShop size={'1.5rem'} color='inherit' />
+        </Badge>
+      </section>
+      <p>carrito</p>
     </div>
   );
 };

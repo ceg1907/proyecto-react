@@ -33,3 +33,7 @@
     padding: 5px;
 
 }
+
+.box-itemDetail .disabled::before {
+    content: 'agregar al carrito';
+}

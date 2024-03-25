@@ -18,6 +18,7 @@ export default function BasicMenu() {
   return (
     <div className='box-collapse'>
       <Button
+        className='button-category'
         id='basic-button'
         aria-controls={open ? 'basic-menu' : undefined}
         aria-haspopup='true'
@@ -26,10 +27,9 @@ export default function BasicMenu() {
         variant='text'
         size='small'
         style={{
-          fontFamily:
-            "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
-          fontWeight: 'normal',
+          fontFamily: "'Cormorant Garamond', 'serif'",
           textTransform: 'capitalize',
+          fontWeight: 'bolder',
         }}
         color='inherit'>
         Categorias

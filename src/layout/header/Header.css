@@ -10,10 +10,12 @@
 .widget-header {
 
     display: flex;
+
 }
 
 .widget-header a {
     color: black;
+
 }
 
 .logo {
@@ -22,4 +24,44 @@
     font-size: 40px;
     text-decoration: none;
     color: black;
+    font-weight: normal;
+}
+
+.user-box,
+.cart-box {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    width: 90%
+}
+
+.user-box p,
+.cart-box p {
+    font-size: larger;
+    display: flex;
+    margin: 10px;
+    font-weight: normal;
+
+}
+
+.user-box section,
+.cart-box section {
+    display: flex;
+    flex-direction: row;
+
+
+
+}
+
+
+.user-button {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    display: flex;
+}
+
+.badge span {
+    background-color: rgb(213, 189, 175, 0.8);
+    padding: 0;
 }

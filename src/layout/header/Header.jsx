@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import { CartWidget } from '../../components/cartWidget/CartWidget';
 import { UserWidget } from '../../components/userWidget/UserWidget';
 import { Navbar } from '../navbar/Navbar';
-
 import './Header.css';
 
 export const Header = () => {

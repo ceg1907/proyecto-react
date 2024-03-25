@@ -21,6 +21,12 @@ export const ItemCountContainer = ({ stock, onAdd, initial = 1 }) => {
   };
 
   return (
-    <ItemCount counter={counter} sumar={sumar} restar={restar} onAdd={onAdd} />
+    <ItemCount
+      counter={counter}
+      sumar={sumar}
+      restar={restar}
+      onAdd={onAdd}
+      stock={stock}
+    />
   );
 };

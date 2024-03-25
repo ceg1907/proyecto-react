@@ -1,12 +1,24 @@
-export const ItemCount = ({ counter, sumar, restar, onAdd }) => {
+import { AddToCart } from '../addToCart/AddToCart';
+import { ButtonItemCountContainer } from '../buttonCount/ButtonItemCountContainer';
+
+export const ItemCount = ({
+  counter,
+  sumar,
+  restar,
+  onAdd,
+  stock,
+  totalPrice,
+}) => {
   return (
     <>
-      <div>
-        <button onClick={restar}> restar </button>
-        <h4>{counter}</h4>
-        <button onClick={sumar}> sumar </button>
-      </div>
-      <button onClick={() => onAdd(counter)}>agregar al carrito</button>
+      <ButtonItemCountContainer
+        sumar={sumar}
+        restar={restar}
+        counter={counter}
+        stock={stock}
+        totalPrice={totalPrice}
+      />
+      <AddToCart onAdd={onAdd} counter={counter} />
     </>
   );
 };

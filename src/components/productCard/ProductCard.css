@@ -5,8 +5,9 @@
     width: 260px;
     height: 370px;
     padding: 10px;
-    border: 1px solid black;
+    box-shadow: 0.5px 0px 5px 2px gray;
     margin: 10px;
+    border-radius: 10px;
 }
 
 .box-img {
@@ -19,4 +20,31 @@
 .img-card {
     max-width: 100%;
     max-height: 100%;
+}
+
+.link-card {
+    color: black;
+
+}
+
+.box-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.box-info h3,
+.box-info div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 30px;
+    font-family: 'Corinthia', cursive;
+    font-weight: normal;
+}
+
+.box-info div span {
+    font-size: 22px
 }

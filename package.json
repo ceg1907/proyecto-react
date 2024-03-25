@@ -12,6 +12,9 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
+    "@fontsource-variable/dancing-script": "^5.0.17",
+    "@fontsource/corinthia": "^5.0.19",
+    "@fontsource/cormorant-garamond": "^5.0.12",
     "@fontsource/roboto": "^5.0.8",
     "@mui/material": "^5.15.11",
     "firebase": "^10.9.0",
